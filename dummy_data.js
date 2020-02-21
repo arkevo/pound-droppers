@@ -93,92 +93,133 @@ var trainers = [
   }
 ];
 var classes = [
-  { id: 1, type: "yoga", time: "MON 6PM", room: "yoga studio", trainerId: 6 },
-  { id: 2, type: "HIIT", time: "MON 7PM", room: "yoga studio", trainerId: 4 },
+  {
+    id: 1,
+    type: "yoga",
+    day: "MON",
+    time: "6PM",
+    room: "yoga studio",
+    trainerId: 6
+  },
+  {
+    id: 2,
+    type: "HIIT",
+    day: "MON",
+    time: "7PM",
+    room: "yoga studio",
+    trainerId: 4
+  },
   {
     id: 3,
     type: "pilates",
-    time: "TUE 6PM",
+    day: "TUE",
+    time: "6PM",
     room: "yoga studio",
     trainerId: 1
   },
   {
     id: 4,
     type: "cycling",
-    time: "TUE 6PM",
+    day: "TUE",
+    time: "6PM",
     room: "cycling room",
     trainerId: 2
   },
   {
     id: 5,
     type: "weight training",
-    time: "WED 6PM",
+    day: "WED",
+    time: "6PM",
     room: "GYM",
     trainerId: 4
   },
   {
     id: 6,
     type: "weight training",
-    time: "WED 7PM",
+    day: "WED",
+    time: "7PM",
     room: "GYM",
     trainerId: 3
   },
-  { id: 7, type: "yoga", time: "THUR 6PM", room: "yoga studio", trainerId: 5 },
-  { id: 8, type: "HIIT", time: "THUR 7PM", room: "yoga studio", trainerId: 3 },
+  {
+    id: 7,
+    type: "yoga",
+    day: "THUR",
+    time: "6PM",
+    room: "yoga studio",
+    trainerId: 5
+  },
+  {
+    id: 8,
+    type: "HIIT",
+    day: "THUR",
+    time: "7PM",
+    room: "yoga studio",
+    trainerId: 3
+  },
   {
     id: 9,
     type: "pilates",
-    time: "FRI 7PM",
+    day: "FRI",
+    time: "7PM",
     room: "yoga studio",
     trainerId: 6
   },
   {
     id: 10,
     type: "cycling",
-    time: "FRI 8PM",
+    day: "FRI",
+    time: "8PM",
     room: "cycling room",
     trainerId: 3
   },
   {
     id: 11,
     type: "nutrition",
-    time: "SAT 3PM",
+    day: "SAT",
+    time: "3PM",
     room: "yoga studio",
     trainerId: 1
   },
   {
     id: 12,
     type: "weight training",
-    time: "SAT 5PM",
+    day: "SAT",
+    time: "5PM",
     room: "GYM",
     trainerId: 4
   },
   {
     id: 13,
     type: "yoga",
-    time: "SAT 7PM",
+    day: "SAT",
+    time: "7PM",
     room: "yoga studio",
     trainerId: 1
   },
   {
     id: 14,
     type: "weight training",
-    time: "SUN 3PM",
+    day: "SUN",
+    time: "3PM",
     room: "GYM",
     trainerId: 2
   },
   {
     id: 15,
     type: "pilates",
-    time: "SUN 5PM",
+    day: "SUN",
+    time: "5PM",
     room: "yoga studio",
     trainerId: 5
   },
   {
     id: 16,
     type: "cycling",
-    time: "SUN 7PM",
+    day: "SUN",
+    time: "7PM",
     room: "cycling room",
     trainerId: 6
   }
 ];
+module.exports = { users, trainers, classes };
