@@ -10,12 +10,14 @@ var users = [
     id: 1,
     email: "huan123@gmail.com",
     password: "1234",
-    q1: "5",
-    q2: "5",
-    q3: "3",
-    q4: "3",
-    q5: "4",
-    q6: "5"
+    answers: [
+      {id: 1234567, question_id: 1234567, answer: 5},
+      q2: "5",
+      q3: "3",
+      q4: "3",
+      q5: "4",
+      q6: "5"
+    ]
   }
 ];
 var trainers = [
