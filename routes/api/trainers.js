@@ -1,10 +1,13 @@
-const express = require("express");
-var data = require("../../dummy_data");
-// routers
+var router = require("express").Router();
+var models = require('../../models'); 
+var Trainers = models.Trainers; 
 
-var router = express.Router();
-router.get("/", function(req, res) {
-  var hbsObject = { trainers: data.trainers };
-  res.render("trainers", hbsObject);
-});
-module.exports = router;
+
+router
+  .route("/")
+  .get(async (req, res) => {
+    const trainers = await Trainers.findAll();
+    res.json({ trainers: trainers });
+  });
+
+  module.exports = router;
