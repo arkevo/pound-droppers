@@ -1,5 +1,5 @@
 const express = require("express");
-var data = require("../dummy_data");
+var data = require("../../dummy_data");
 // routers
 
 var router = express.Router();
