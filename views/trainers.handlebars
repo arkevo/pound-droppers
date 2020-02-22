@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row" style="margin: 2rem">
+        <h3>Trainers</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        {{#each trainers}}
+        <div class="col-4">
+            <div class="card" style="width: 18rem; margin: 2rem;">
+                <img src="{{this.photo}}" class="card-img-top" alt="{{this.photo}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.introduction}}</p>
+                    <a href="/api/trainers/{{this.id}}" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
