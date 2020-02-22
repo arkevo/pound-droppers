@@ -10,3 +10,13 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Classes;
 };
+
+// module.exports = Classes;
+// module.exports = Classes;
+
+
+// const NukeUser = sequelize.define('nuke_users', {
+//   // ...
+// });
+
+// module.exports = NukeUser;
