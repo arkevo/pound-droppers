@@ -4,18 +4,20 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        {{#each trainers}}
+    <div class="row" style="margin: 2rem">
+        {{#each this}}
+        {{#if dataValues.id}}
         <div class="col-4">
             <div class="card" style="width: 18rem; margin: 2rem;">
-                <img src="{{this.photo}}" class="card-img-top" alt="{{this.photo}}">
+                <img src="{{dataValues.photo}}" class="card-img-top" alt="{{dataValues.photo}}">
                 <div class="card-body">
-                    <h5 class="card-title">{{this.name}}</h5>
-                    <p class="card-text">{{this.introduction}}</p>
-                    <a href="/api/trainers/{{this.id}}" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">{{dataValues.name}}</h5>
+                    <p class="card-text">{{dataValues.introduction}}</p>
+                    <a href="/trainers/{{dataValues.id}}" class="btn btn-primary">Class Schedule</a>
                 </div>
             </div>
         </div>
+        {{/if}}
         {{/each}}
     </div>
 </div>
