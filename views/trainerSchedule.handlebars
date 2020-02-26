@@ -1,10 +1,10 @@
 <div class="container">
     <div class="row" style="margin: 2rem">
-        <h3>Classes</h3>
+        <h3>Trainer {{#each this}}{{Trainer.dataValues.name}}{{/each}}</h3>
     </div>
 </div>
 <div class="container">
-    <div class="row" style="margin: 2rem">
+    <div class="row">
         {{#each this}}
         {{#if dataValues.id}}
         <div class="col-4">
