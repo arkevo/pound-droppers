@@ -1,9 +1,9 @@
 module.exports = {
   development: {
-    username: "zm7uztyi3jyhp33p",
-    password: "tiqr9pd0ohlf1bi3",
-    database: "ujuz5sf7p8cq4j5s",
-    host: "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    username: "root",
+    password: null,
+    database: "pound_droppers_db",
+    host: "localhost",
     dialect: "mysql"
   },
   production: {
