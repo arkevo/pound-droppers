@@ -22,16 +22,18 @@ db.sequelize.sync().then(() => {
     }
   ];
 
-  users.forEach(async user => {
-    try {
-      await db.User.create(user);
-    } catch (err) {
-      console.error(err);
-    }
-  })()
-  .catch(e => {
-    console.error(e);
-  });
+  users
+    .forEach(async user => {
+      try {
+        await db.User.create(user);
+      } catch (err) {
+        console.error(err);
+        throw error
+      }
+    })()
+    .catch(e => {
+      console.error(e);
+    });
 
   var trainers = [
     {
@@ -66,16 +68,18 @@ db.sequelize.sync().then(() => {
     }
   ];
 
-  trainers.forEach(async trainers => {
-    try {
-      await db.Trainers.create(trainers);
-    } catch (err) {
-      console.error(err);
-    }
-  })()
-  .catch(e => {
-    console.error(e);
-  });
+  trainers
+    .forEach(async trainers => {
+      try {
+        await db.Trainers.create(trainers);
+      } catch (err) {
+        console.error(err);
+        throw error;
+      }
+    })()
+    .catch(e => {
+      console.error(e);
+    });
 
   var classes = [
     {
