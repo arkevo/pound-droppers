@@ -5,23 +5,37 @@
 </div>
 <div class="container">
     <div class="row" style="margin: 2rem">
-        {{#each this}}
-        {{#if dataValues.id}}
-        <div class="col-4">
-            <div class="card" style="width: 18rem; margin: 2rem;">
-                <div class="card-body">
-                    <h5 class="card-title">{{dataValues.type}} class</h5>
-                    <p class="card-text">Date: {{#date-helper dataValues.time}}{{/date-helper}}</p>
-                    <p class="card-text">Day: {{#day-helper dataValues.time}}{{/day-helper}}</p>
-                    <p class="card-text">Time: {{#time-helper dataValues.time}}{{/time-helper}}</p>
-                    <p class="card-text">Room: {{dataValues.room}}</p>
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary">RSVP</button>
+        {{#each classes}}
+        <div class="col-sm-6 col-lg-4">
+            <!-- Card Flip -->
+            <div class="card-flip">
+                <div class="flip">
+                    <div class="front">
+                        <!-- front content -->
+                        <div class="card" style="width: 18rem; margin: 2rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{dataValues.type}} class</h5>
+                                <p class="card-text">Date: {{#date-helper dataValues.time}}{{/date-helper}}</p>
+                                <p class="card-text">Day: {{#day-helper dataValues.time}}{{/day-helper}}</p>
+                                <p class="card-text">Time: {{#time-helper dataValues.time}}{{/time-helper}}</p>
+                                <p class="card-text">Room: {{dataValues.room}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card" style="width: 18rem; margin: 2rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Trainer {{tainer.name}}</h5>
+                                <p class="card-text">{{trainer.introduction}}</p>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-primary">RSVP</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{/if}}
         {{/each}}
     </div>
 </div>

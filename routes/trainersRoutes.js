@@ -12,8 +12,11 @@ router.route("/:id").get(async (req, res) => {
     include: [Trainers],
     where: { trainerid: req.params.id }
   });
-  console.log(classes);
-  res.render("trainerSchedule", classes);
+  const classesObj = {
+    classes: classes,
+    trainer: classes[0].Trainer.dataValues
+  };
+  res.render("trainerSchedule", classesObj);
 });
 
 module.exports = router;
