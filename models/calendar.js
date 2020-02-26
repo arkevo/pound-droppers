@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var calendar = sequelize.define(
-    "calendar",
+    "Calendar",
     {
       month: {
         type: DataTypes.INTEGER,
