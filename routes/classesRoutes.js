@@ -1,14 +1,17 @@
 var router = require("express").Router();
 var models = require("../models"); // loads index.js
 var Classes = models.Classes;
+var Trainers = models.Trainers;
 
 router.route("/").get(async (req, res) => {
-  const classes = await Classes.findAll({ order: [["time", "ASC"]] });
+  const classes = await Classes.findAll({
+    include: [Trainers],
+    order: [["time", "ASC"]]
+  });
   const classesObj = {
-    classes: classes,
-    trainer: classes[0].Trainer.dataValues
+    classes: classes
   };
-  res.render("trainerSchedule", classesObj);
+  res.render("classes", classesObj);
 });
 
 module.exports = router;
