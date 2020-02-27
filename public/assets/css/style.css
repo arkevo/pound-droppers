@@ -1,3 +1,26 @@
+/* nav bar */
+.navbar {
+  padding: 1rem 2rem;
+}
+.navbar-brand {
+  color: firebrick !important;
+}
+:hover.nav-link {
+  /* text-decoration-line: underline; */
+  color: firebrick !important;
+}
+.carousel-caption,
+h3 {
+  color: firebrick;
+}
+img.d-block {
+  height: 700px;
+}
+.btn {
+  background-color: firebrick;
+  border: none;
+}
+/* card flip */
 .card-flip {
   perspective: 1000px;
 }
