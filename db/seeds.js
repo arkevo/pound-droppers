@@ -70,24 +70,20 @@ classes.forEach(classes => {
   db.Classes.create(classes);
 });
 
-
-
-
-
 var trainers = [
   {
     name: "Amy",
-    photo: "photoUrl",
+    photo: "/assets/img/Amy.jpg",
     introduction: "Hi, My name is Amy."
   },
   {
     name: "Jacob",
-    photo: "photoUrl",
+    photo: "/assets/img/Jacob.jpg",
     introduction: "Hi, My name is Jacob."
   },
   {
     name: "Emily",
-    photo: "photoUrl",
+    photo: "/assets/img/Emily.jpg",
     introduction: "Hi, My name is Emily."
   },
   {
@@ -97,12 +93,12 @@ var trainers = [
   },
   {
     name: "Mia",
-    photo: "photoUrl",
+    photo: "/assets/img/Mia.jpg",
     introduction: "Hi, My name is Mia."
   },
   {
     name: "Eric",
-    photo: "photoUrl",
+    photo: "/assets/img/Eric.jpg",
     introduction: "Hi, My name is Eric."
   }
 ];
