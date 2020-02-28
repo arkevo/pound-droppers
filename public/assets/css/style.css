@@ -6,9 +6,9 @@
   color: firebrick !important;
 }
 :hover.nav-link {
-  /* text-decoration-line: underline; */
   color: firebrick !important;
 }
+/* carousel */
 .carousel-caption,
 h3 {
   color: firebrick;
@@ -16,10 +16,16 @@ h3 {
 img.d-block {
   height: 700px;
 }
+/* buttons */
 .btn {
   background-color: firebrick;
   border: none;
 }
+:hover.btn {
+  background-color: rgb(153, 29, 29);
+  border: none;
+}
+
 /* card flip */
 .card-flip {
   perspective: 1000px;
@@ -57,4 +63,90 @@ img.d-block {
 
 .back {
   transform: rotateY(180deg);
+}
+
+/* calendar */
+body {
+  margin-top: 3%;
+}
+
+.calendar,
+.calendar_weekdays,
+.calendar_content {
+  max-width: 300px;
+}
+.calendar {
+  margin: auto;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+}
+.calendar_content,
+.calendar_weekdays,
+.calendar_header {
+  position: relative;
+  overflow: hidden;
+}
+.calendar_weekdays div {
+  display: inline-block;
+  vertical-align: top;
+  color: firebrick !important;
+}
+.calendar_weekdays div,
+.calendar_content div {
+  width: 14.28571%;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  color: #6f6f6f;
+  font-size: 14px;
+}
+.calendar_content div {
+  border: 1px solid transparent;
+  float: left;
+}
+.calendar_content div:hover {
+  border: 1px solid #dcdcdc;
+  cursor: default;
+}
+.calendar_content div.blank:hover {
+  cursor: default;
+  border: 1px solid transparent;
+}
+.calendar_content div.past-date {
+  color: #d5d5d5;
+}
+.calendar_content div.today {
+  font-weight: bold;
+  font-size: 14px;
+  color: firebrick !important;
+  border: 1px solid #dcdcdc;
+}
+.calendar_content div.selected {
+  background-color: #f0f0f0;
+}
+.calendar_header {
+  width: 100%;
+  text-align: center;
+}
+.calendar_header h2 {
+  padding: 0 10px;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  float: left;
+  width: 70%;
+  margin: 0 0 10px;
+}
+button.switch-month {
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: #dcdcdc;
+  float: left;
+  width: 15%;
+  transition: color 0.2s;
+}
+button.switch-month:hover {
+  color: firebrick;
 }
