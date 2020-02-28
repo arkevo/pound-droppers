@@ -9,11 +9,13 @@
         {{#if dataValues.id}}
         <div class="col-4">
             <div class="card" style="width: 18rem; margin: 2rem;">
-                <img src="{{dataValues.photo}}" class="card-img-top" alt="{{dataValues.photo}}">
+                <img src="{{dataValues.photo}}" class="card-img-top" alt="Trainer Photo">
                 <div class="card-body">
                     <h5 class="card-title">{{dataValues.name}}</h5>
                     <p class="card-text">{{dataValues.introduction}}</p>
-                    <a href="/trainers/{{dataValues.id}}" class="btn btn-primary">Class Schedule</a>
+                    <div class="d-flex justify-content-center">
+                        <a href="/trainers/{{dataValues.id}}" class="btn btn-primary">Class Schedule</a>
+                    </div>
                 </div>
             </div>
         </div>
