@@ -34,7 +34,7 @@ const PORT = 5000;
 
 app.use(express.json());
 app.use(express.urlencoded());
-
+app.use(express.static("public"));
 app.use(morgan("dev"));
 app.use(require("./routes"));
 

@@ -1,13 +1,12 @@
 <div class="container">
     <div class="row" style="margin: 2rem">
-        <h3>Trainer {{#each this}}{{Trainer.dataValues.name}}{{/each}}</h3>
+        <h3>Trainer {{trainer.name}}</h3>
     </div>
 </div>
 <div class="container">
     <div class="row">
-        {{#each this}}
-        {{#if dataValues.id}}
-        <div class="col-4">
+        {{#each classes}}
+        <div class="col-sm-6 col-lg-4">
             <div class="card" style="width: 18rem; margin: 2rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{dataValues.type}} class</h5>
@@ -21,7 +20,7 @@
                 </div>
             </div>
         </div>
-        {{/if}}
+
         {{/each}}
     </div>
 </div>
