@@ -117,4 +117,63 @@ db.sequelize.sync().then(() => {
       console.error(err);
     }
   });
+
+  var answers = [
+    {
+      a1: 1,
+      a2: 2,
+      a3: 3,
+      a4: 4,
+      a5: 3,
+      a6: 4
+    },
+    {
+      a1: 5,
+      a2: 5,
+      a3: 2,
+      a4: 1,
+      a5: 3,
+      a6: 2
+    },
+    {
+      a1: 4,
+      a2: 4,
+      a3: 4,
+      a4: 2,
+      a5: 2,
+      a6: 1
+    },
+    {
+      a1: 1,
+      a2: 1,
+      a3: 1,
+      a4: 2,
+      a5: 2,
+      a6: 5
+    },
+    {
+      a1: 1,
+      a2: 2,
+      a3: 2,
+      a4: 2,
+      a5: 2,
+      a6: 2
+    },
+    {
+      a1: 5,
+      a2: 5,
+      a3: 5,
+      a4: 4,
+      a5: 5,
+      a6: 4
+    }
+  ];
+
+  answers.forEach(async answers => {
+    try {
+      await db.Answers.create(answers);
+    } catch (err) {
+      console.error(err);
+    }
+  });
 });
