@@ -18,14 +18,25 @@ img.d-block {
 }
 /* buttons */
 .btn {
+  color: white;
   background-color: firebrick;
   border: none;
 }
 :hover.btn {
+  color: white;
   background-color: rgb(153, 29, 29);
   border: none;
 }
-
+:active.btn {
+  color: white;
+  background-color: rgb(153, 29, 29) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.card {
+  border: 1px solid #bfbfbf;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
 /* card flip */
 .card-flip {
   perspective: 1000px;
