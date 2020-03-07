@@ -2,11 +2,13 @@
 
 ## Description
 
-Pound-Dropper is ...
+Pound-Dropper is a app used to create recomendations for your next training class at the gym. 
 
 ## How to use..
 
-1. R..
+1. Go to https://dashboard.heroku.com/apps/pound-droppers
+2. Fill out the Survey
+3. Choose class on the recomended instructor
 
 
 ## Dependencies
@@ -21,6 +23,6 @@ Pound-Dropper is ...
 
 - Ivo Kolev 
 - Huan Yang 
-- John Tuhaise 
+
 
 
